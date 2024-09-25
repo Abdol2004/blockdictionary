@@ -7,7 +7,7 @@ app.use(express.json());
 const port= process.env.port;
 const mongo= process.env.mongoUri
 const Router=require("./route/termRoute")
-
+app.use(cors());
 mongoose.connect(mongo).then(()=>{
     console.log(`DB Connected`);
     app.listen(port, ()=>{
