@@ -6,7 +6,7 @@ const termSchema = new mongoose.Schema({
         required: true,
         unique: true,
       },
-      defination: {
+      definition: {
         type: String,
         required: true,
       },
