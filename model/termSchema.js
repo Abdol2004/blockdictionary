@@ -6,12 +6,13 @@ const termSchema = new mongoose.Schema({
         required: true,
         unique: true,
       },
-      definition: {
+      defination: {
         type: String,
         required: true,
       },
-      example: {
+      example:{
         type: String,
+        required: true,
       },
       dateCreated: {
         type: Date,

@@ -1,6 +1,5 @@
 const express=require("express")
 const Term= require("../model/termSchema")
-const mongoose= require("mongoose")
 
 const create= async(req,res)=>{
    
